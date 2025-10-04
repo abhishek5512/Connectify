@@ -41,6 +41,7 @@ It provides job discovery, company insights, and real-time chat — all in one p
 
 ## 🗂️ Project Structure
 
+
 Connectify/
 │
 ├── app/
@@ -59,11 +60,6 @@ Connectify/
 ├── settings.gradle
 ├── google-services.json (Not public)
 └── README.md
-
-yaml
-Copy code
-
----
 
 ## ⚙️ Setup & Installation
 
