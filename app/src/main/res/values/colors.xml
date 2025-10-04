@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorOnSecondary">#000000</color>
+
+
+    <!-- Background & Surface -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <!-- Common Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#888888</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="primary">#6200EE</color>  <!-- Main app theme color -->
+
+    <!-- Additional UI Colors -->
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#555555</color>
+    <color name="blue">#1E90FF</color>  <!-- Used for Skills Text -->
+    <color name="green">#008000</color>  <!-- Used for Qualification Text -->
+    <color name="red">#FF4444</color>  <!-- Used for Age Text and Delete Button -->
+    <color name="purple">#6A0DAD</color>  <!-- Used for Accept Button -->
+    <color name="orange">#FFA500</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="gold">#FFD700</color>
+    <color name="dark_red">#8B0000</color>
+    <color name="soft_yellow">#FFFACD</color>
+    <color name="light_green">#90EE90</color>
+    <color name="purple_700">#3700B3</color>
+
+</resources>

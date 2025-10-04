@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6F9">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2193b0"
+        android:elevation="6dp"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/chatProfileImage"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/profile_placeholder"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/chatUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chatUserStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textColor="#C8E6C9"
+                    android:textSize="12sp"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Chat Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+
+    <!-- Message Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="text"
+            android:textColor="#212121"
+            android:textColorHint="#757575"
+            android:maxLines="4"
+            android:minHeight="48dp"
+            android:gravity="top|start" />
+
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_send"
+            android:tint="@android:color/white"
+            android:contentDescription="Send"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+</LinearLayout>

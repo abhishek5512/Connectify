@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main screen layout -->
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Fragment area -->
+        <FrameLayout
+            android:id="@+id/employerFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
+
+        <!-- Bottom Navigation -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/employerBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:menu="@menu/bottom_nav_menu_employer"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_nav_selector"
+            app:itemTextColor="@color/bottom_nav_selector" />
+    </LinearLayout>
+
+    <!-- ✅ Lottie overlay ONLY over fragment container -->
+    <RelativeLayout
+        android:id="@+id/lottieOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+    android:background="#FFFFFF"
+    android:visibility="gone"
+    android:gravity="center">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieLoaderMatches"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false" />
+</RelativeLayout>
+
+    </FrameLayout>

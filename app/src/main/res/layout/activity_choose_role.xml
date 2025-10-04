@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Role"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnSeeker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register as Seeker"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnEmployer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register as Employer"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

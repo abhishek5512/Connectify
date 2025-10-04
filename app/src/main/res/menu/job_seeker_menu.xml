@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_jobs"
+        android:icon="@drawable/work_24px"
+        android:title="Jobs"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat_24px"
+        android:title="Chat"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/person_24px"
+        android:title="Profile"
+        android:showAsAction="ifRoom" />
+
+</menu>

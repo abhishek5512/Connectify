@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:elevation="12dp"
+        android:padding="28dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/app_logo"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="App Logo" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2193b0"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue"
+            android:textSize="16sp"
+            android:textColor="#78909C"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Email Field - Keeping original structure but enhancing appearance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="12dp"
+                app:tint="#2193b0" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:textColor="#212121"
+                android:textColorHint="#78909C"
+                android:background="@null"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Password Field - Keeping original structure with RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_lock"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                app:tint="#2193b0" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#212121"
+                android:textColorHint="#78909C"
+                android:background="@null"
+                android:textSize="16sp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"/>
+
+            <ImageView
+                android:id="@+id/btnTogglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_visibility_off"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Toggle Password Visibility"
+                app:tint="#78909C" />
+        </RelativeLayout>
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#D72638"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2193b0"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:indeterminateTint="#2193b0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="14sp"
+                android:textColor="#78909C"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+
+        <!-- Register Text -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Don't have an account? Sign up"
+            android:textColor="#2193b0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Google Sign-In Button -->
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

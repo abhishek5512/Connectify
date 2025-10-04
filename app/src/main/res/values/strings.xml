@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Connectify</string>
+    <string-array name="job_types">
+        <item>Full-time</item>
+        <item>Part-time</item>
+        <item>Internship</item>
+        <item>Contract</item>
+        <item>Freelance</item>
+    </string-array>
+
+    <!-- Google Sign-In Strings -->
+    <string name="default_web_client_id">79128719898-1tl20lnekalfbfnfhqbsjhpu9abpujmn.apps.googleusercontent.com</string>
+</resources>

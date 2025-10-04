@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <!-- 🏢 Company Logo at the Top -->
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_border"
+            android:src="@drawable/company_avatar" />
+
+        <!-- 👤 View Company Button -->
+        <Button
+            android:id="@+id/btnViewCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View Company"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 📋 Job Details -->
+        <TextView
+            android:id="@+id/tvJobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1E3A8A"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="16sp"
+            android:textColor="#6A1B9A"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="14sp"
+            android:textColor="#D72638"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ Salary"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#2E7D32" />
+
+        <!-- ❌ Delete Button (Visible only for Employer) -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_gravity="end"
+            android:backgroundTint="#FF5252"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

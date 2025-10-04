@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat_24px"
+        android:title="Chat"/>
+
+    <item
+        android:id="@+id/nav_post"
+        android:icon="@drawable/ic_postjob"
+        android:title="Post Job"/>
+
+    <item
+        android:id="@+id/nav_matches"
+        android:icon="@drawable/ic_matches"
+        android:title="Matches"/>
+</menu>

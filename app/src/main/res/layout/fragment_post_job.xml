@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/card_background"
+            android:elevation="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header Icon -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Post Job Icon"
+                android:src="@drawable/ic_post_job"
+                app:tint="#2193b0" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Post a Job"
+                android:textColor="#2193b0"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Add all the required job details below"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
+            <!-- Input Fields -->
+            <EditText
+                android:id="@+id/etJobTitle"
+                style="@style/StyledEditText"
+                android:hint="Job Title" />
+
+            <EditText
+                android:id="@+id/etJobDescription"
+                style="@style/StyledEditText"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <EditText
+                android:id="@+id/etSalary"
+                style="@style/StyledEditText"
+                android:hint="Salary (₹/month)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etLocation"
+                style="@style/StyledEditText"
+                android:hint="Location (City, Country)" />
+
+            <EditText
+                android:id="@+id/etJobType"
+                style="@style/StyledEditText"
+                android:hint="Job Type (Full-time / Part-time)" />
+
+            <!-- Post Job Button -->
+            <Button
+                android:id="@+id/btnPostJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#2193b0"
+                android:elevation="4dp"
+                android:padding="14dp"
+                android:text="POST JOB"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- View Jobs -->
+            <Button
+                android:id="@+id/btnViewPostedJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4CAF50"
+                android:elevation="4dp"
+                android:padding="14dp"
+                android:text="VIEW POSTED JOBS"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:indeterminateTint="#2193b0"
+                android:visibility="gone" />
+
+            <!-- RecyclerView for posted jobs -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Your Posted Jobs"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPostedJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="8dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
